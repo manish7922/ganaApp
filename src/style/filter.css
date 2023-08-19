@@ -1,0 +1,280 @@
+.lg_filter {
+    position: relative;
+    height: 50px;
+    display: flex;
+    width: 100%;
+    z-index: 3;
+}
+
+@media (min-width: 992px){
+.lg_filter {
+        height: 60px;
+        align-items: center;
+        justify-content: space-between;
+}
+}
+
+@media (min-width: 992px){
+.wrapper>.lg_filter {
+        margin: 0 -45px;
+        width: auto;
+        padding: 0 45px;
+}
+}
+
+.h_home+.wrapper>.lg_filter {
+    position: sticky;
+    top: 100px;
+}
+
+@media (min-width: 992px){
+.h_home+.wrapper>.lg_filter {
+        top: 60px;
+}
+}
+
+.h_home+.wrapper>.lg_filter {
+    background-color: #fff;
+}
+
+.lg_filter ._a {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+@media (min-width: 992px){
+.lg_filter ._a {
+        overflow-x: initial;
+}
+}
+
+.lg_filter .link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 30px;
+    font-size: 14px;
+    letter-spacing: -.09px;
+    text-transform: capitalize;
+}
+
+.lg_filter .link {
+    color: rgba(0,0,0,.75);
+}
+
+
+.lg_filter.bbStyle .link.selected {
+    text-shadow: 0 0 1px;
+    font-size: 14px;
+}
+
+@media (min-width: 992px){
+.lg_filter.bbStyle .link.selected, .lg_filter .link {
+        font-size: 16px;
+}
+}
+
+
+
+.lg_filter .link small {
+    display: flex;
+    align-items: center;
+}
+
+.drop {
+    position: absolute;
+    text-align: left;
+    width: 186px;
+    border-radius: 6px;
+    box-shadow: 0 2px 32px 0 rgba(0,0,0,.17);
+}
+
+.lg_filter .drop {
+    opacity: 0;
+    position: fixed;
+    left: 30%;
+    top: -500px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+@media (min-width: 992px){
+.lg_filter .drop {
+        position: absolute;
+        right: 0;
+        height: 380px;
+        max-height: unset;
+        overflow: hidden;
+        z-index: 1;
+}
+}
+
+.cust_dropdown .options,  .drop {
+    background-color: #fff;
+    color: rgba(0,0,0,.75);
+}
+
+.lg_filter .link:after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transition: all .2s;
+}
+
+
+@media (min-width: 992px){
+.scrollhost, .scrollhost-container {
+        position: relative;
+        height: 100%;
+}
+}
+
+@media (min-width: 992px){
+.scrollhost, .scrollhost-container {
+    position: relative;
+    height: 100%;
+}}
+
+
+@media (min-width: 992px){
+.scrollhost {
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+}
+}
+
+.lg_filter .drop .scrollhost {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (min-width: 992px){
+.scroll-bar {
+        width: 4px;
+        height: 100%;
+        right: 0;
+        bottom: 0;
+}
+}
+
+@media (min-width: 992px){
+.scroll-bar, .scroll-thumb {
+        top: 0;
+        position: absolute;
+        border-radius: 7px;
+}
+}
+
+.sm-hide {
+    display: none!important;
+}
+
+@media (min-width: 992px){
+.sm-hide {
+        display: flex!important;
+}
+}
+
+
+@media (min-width: 992px){
+ .scroll-bar {
+        background-color: #c9c9c9;
+}
+}
+
+
+@media (min-width: 992px){
+.scroll-bar, .scroll-thumb {
+        top: 0;
+        position: absolute;
+        border-radius: 7px;
+}
+}
+
+@media (min-width: 992px){
+.scroll-thumb {
+        width: 2px;
+        height: 10px;
+        margin-left: 1px;
+        opacity: 1;
+}
+}
+
+@media (min-width: 992px){
+ .scroll-thumb {
+        background-color: #6f6f6f;
+}
+}
+
+
+.lg_filter.bbStyle .link.selected:after, .lg_filter.bbStyle .link:hover:after {
+    width: 80%;
+    background: #e72c30;
+}
+
+.lg_filter .link small svg {
+    margin-left: 10px;
+    transform: rotate(90deg);
+    width: 7px;
+}
+
+.lg_filter .sublink:hover,.lg_filter .sublink:hover .drop {
+    opacity: 1
+}
+
+
+
+
+.light .cust_dropdown .options, .light .drop {
+        background-color: #fff;
+        color: rgba(0,0,0,.75);
+}
+.lg_filter .sublink:hover, .lg_filter .sublink:hover .drop {
+    opacity: 1;
+}
+
+.lg_filter .sublink:hover .drop {
+    top: 110px;
+}
+
+
+
+@media (min-width: 992px){
+.wrapper>.lg_filter .sublink:hover .drop {
+        top: 100%;
+}
+}
+
+
+.lg_filter .sublink:hover .drop {
+    top: 150px;
+}
+
+.lg_filter .sublink:hover .drop {
+    top: calc(100% + 3px);
+    left: 0;
+}
+
+
+.lg_filter .drop a {
+    padding: 0 10px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    font-size: 14px;
+    font-family: proximanova-semibold-webfont,Arial,sans-serif;
+    color: inherit;
+}
+
+.lg_filter .drop a:hover {
+    background-color: rgba(0, 0, 0, .1);
+}

@@ -1,0 +1,291 @@
+.model._open{
+    display: block;
+}
+
+.model{
+    display: none;
+}
+
+.login_pp{
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;    
+}
+
+.model ._inner{
+    width: 90%;
+    border-radius: 6px;
+    padding: 20px;
+    z-index: 11;
+}
+
+.model .cent-pp{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    overflow: hidden; 
+    transform: translate(-50%,-50%);
+}
+
+@media (min-width: 992px){
+.model ._inner {
+        width: 500px;
+}
+}
+
+.model ._inner.login_pp{
+    width: 100vw;
+  border-radius: 0;
+}
+
+@media (min-width: 992px){
+    .model ._inner.login_pp{
+padding: 0;
+width: 750px;
+height: auto;
+min-height: 540px;
+max-height: 65vh;
+border-radius: 6px;
+align-items: unset;
+justify-content: unset;
+    }
+}
+
+
+.model ._inner{
+    background-color: rgb(255, 255, 255);
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    color: inherit;
+    font-family: inherit;
+}
+
+.model .cent-pp .close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.close{
+    color: #fff;
+    font-size: 22px;
+}
+
+@media (min-width: 992px){
+    .col_poster{
+        display: flex;
+        flex-direction: column;
+        width: 53%;
+        flex-shrink: 0;
+        padding: 30px 45px;
+        text-align: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-image: url(	https://a10.gaanacdn.com/gn_img/images/login_bg_v1_1621430866.jpg        );
+    }
+}
+
+.sm-hide{
+    display: none!important;
+}
+
+@media (min-width: 992px){
+    .sm-hide{
+        display: flex!important;
+    }  
+}
+
+@media (min-width: 992px){
+.col_poster .row1 strong {
+        font-size: 21px;
+        font-family: proximanova-bold-webfont,Arial,sans-serif;
+        text-shadow: 0 1px 2px rgba(0,0,0,.5);
+        color: #fff;
+}
+}
+
+.userInput_area{
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   max-width: 280px;
+   width: 100%;
+}
+
+@media (min-width: 992px){
+    .userInput_area{ 
+        width: 47%;
+        max-width: unset;
+        flex-shrink: 0;
+        align-items: center;
+        padding: 20px 30px;
+    } 
+}
+
+.login-header{
+    margin-bottom: 35px;
+}
+
+.login-header .row{
+    margin-top: 25px;
+}
+.login-header .row strong {
+    color: rgba(0,0,0,.9);
+}
+.light .login-header strong {
+    color: rgba(0,0,0,.9);
+}
+
+.login-header .row .title{
+    font-size: 21px;
+    font-family:proximanova-bold-webfont,Arial,sans-serif;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.login-header .row small{
+    font-size: 12px;
+    font-family:proximanova-bold-webfont,Arial,sans-serif;
+    display: block;
+    padding: 0 10px;
+    line-height: 1.6;
+}
+
+.login-header .row small{
+    color: #8e8e93;
+}
+
+
+.userInput_area .row_b{
+    width: 100%;
+    margin-bottom: 40px;
+
+}
+
+.userInput_area .row_b .login-input{
+position: relative;
+margin-bottom: 20px;
+padding: 3px 0;
+}
+.userInput_area .row_b .login-input{
+    border-bottom: 1px solid rgba(0,0,0,.2) ;
+}
+
+input, select, textarea {
+    font-size: 16px;
+}
+input {
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    background-color: transparent;
+    color: #8e8e93;
+}
+
+@media (min-width: 992px){
+input, select, textarea {
+        font-size: 12px;
+}
+}
+
+.userInput_area .row_b .login-input>input {
+    width: 100%;
+    padding: 3px 0;
+}
+
+
+.custom-btn{
+    font-size: 14px;
+    font-family: proximanova-bold-webfont,Arial,sans-serif;
+    padding: 12px 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    display: flex;
+    transition: all .2s;
+    color: #8e8e93;
+    background-color: #dedede;
+    cursor: pointer;
+}
+
+
+.userInput_area .row_c{
+    margin-bottom: 35px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.userInput_area .row_c span {
+    font-size: 12px;
+    position: relative;
+}
+
+.userInput_area .row_c span {
+    color: rgba(0,0,0,.9);
+}
+
+.userInput_area .row_c span:after, .userInput_area .row_c span:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1px;
+    width: 100%;
+}
+
+.userInput_area .row_c span:before {
+    left: calc(100% + 10px);
+}
+.userInput_area .row_c span:after {
+    right: calc(100% + 10px);
+}
+
+.userInput_area .row_c span:after, .userInput_area .row_c span:before {
+    background-color: rgba(0,0,0,.2);
+}
+
+.userInput_area .row_d{
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.userInput_area .row_d ._btn {
+    font-size: 10px;
+    font-family: proximanova-semibold-webfont,Arial,sans-serif;
+    height: 30px;
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 5px rgba(0,0,0,.2);
+}
+
+.userInput_area .row_d ._gl {
+    background-color: #fff;
+    color: #000;
+}
+
+.userInput_area .row_d ._btn:first-child, .userInput_area .row_d ._btn svg {
+    margin-right: 10px;
+}
+
+
+.row_e {
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+  ._14Me7y {
+    color: #2874f0;
+    font-weight: 500;
+  }

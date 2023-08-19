@@ -1,0 +1,182 @@
+.banner_carousel {
+    width: 100%;
+    position: relative;
+    margin-bottom: 40px;
+}
+li {
+    list-style: none;
+}
+
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ol, ul {
+    list-style: none;
+}
+
+
+@media (min-width: 992px){
+.banner_carousel {
+        margin-bottom: 50px;
+}
+}
+
+.banner_carousel .inner {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 5px;
+}
+
+.banner_carousel .slide {
+    position: relative;
+    height: 0;
+    flex-shrink: 0;
+    width: 50%;
+    padding-top: 26.25%;
+}
+
+.banner_carousel .animate {
+    -webkit-transition-duration: .5s;
+    -moz-transition-duration: .5s;
+    -o-transition-duration: .5s;
+    transition-duration: .5s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+@media (min-width: 992px){
+.banner_carousel .inner {
+        overflow: hidden;
+}
+}
+
+@media (min-width: 992px){
+.banner_carousel .slide {
+        transform: translateX(-100%);
+}
+}
+
+@media (min-width: 992px){
+.banner_carousel .slide:first-child {
+        margin-left: -25%;
+}
+
+}
+
+.default_bg {
+    background-image: url(https://a10.gaanacdn.com/gn_img/gaanav5/bitmap.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 30% auto;
+}
+
+.banner_carousel ._a {
+    box-shadow: 4px 4px 7px 0 rgba(0,0,0,.15);
+    overflow: hidden;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 20px);
+    margin: auto;
+}
+.banner_carousel ._a, .banner_carousel picture {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+ .default_bg {
+    background-color: #e2e2e2;
+}
+
+.banner_carousel img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+/* button  */
+
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    color: inherit;
+    font-family: inherit;
+}
+
+.sm-hide {
+    display: none!important;
+}
+
+@media (min-width: 992px){
+.sm-hide {
+        display: flex!important;
+}
+}
+
+@media (min-width: 992px){
+.banner_carousel .controls button {
+        position: absolute;
+        top: 50%;
+   
+}
+}
+
+
+@media (min-width: 992px){
+.banner_carousel .controls ._lt {
+        transform: translateY(-50%) rotate(180deg);
+        left: 50px;
+   
+}
+}
+
+@media (min-width: 992px){
+.banner_carousel .controls ._rt {
+        transform: translateY(-50%);
+        right: 50px;
+     
+}
+}
+
+
+@media (min-width: 992px){
+.banner_carousel .controls button svg {
+        filter: drop-shadow(3px 3px 2px rgba(0,0,0,.7));
+        width: 40px;
+        height: 40px;
+     
+}
+
+}
+
+button>svg {
+    display: flex;
+}
+
+.light .svg_color {
+    fill: rgba(0,0,0,.8);
+}
+
+@media (min-width: 992px){
+.banner_carousel .controls button .svg_color {
+        fill: #fff;
+}
+}
+
