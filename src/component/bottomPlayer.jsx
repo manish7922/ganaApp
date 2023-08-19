@@ -26,26 +26,26 @@ export default class BottomPlayer extends Component {
     
       componentDidMount() {
         this.fetchData();
-        this.audioRef.current.addEventListener('canplaythrough', this.handleAudioLoad);
+        // this.audioRef.current.addEventListener('canplaythrough', this.handleAudioLoad);
     }
   
-    componentWillUnmount() {
-      this.audioRef.current.removeEventListener('canplaythrough', this.handleAudioLoad);
-    }
+    // componentWillUnmount() {
+    //   this.audioRef.current.removeEventListener('canplaythrough', this.handleAudioLoad);
+    // }
   
-    handleAudioLoad = () => {
-    //   this.setState({ isLoaded: true });
-    };
+    // handleAudioLoad = () => {
+    // //   this.setState({ isLoaded: true });
+    // };
 
-    playSong = () => {
-        this.setState({ isPlaying: true });
-        this.audioRef.current.play();
-      };
+    // playSong = () => {
+    //     this.setState({ isPlaying: true });
+    //     this.audioRef.current.play();
+    //   };
     
-      pauseSong = () => {
-        this.setState({ isPlaying: false });
-        this.audioRef.current.pause();
-      };
+    //   pauseSong = () => {
+    //     this.setState({ isPlaying: false });
+    //     this.audioRef.current.pause();
+    //   };
 
   render() {
     const {songs,isPlaying,isLoaded}=this.state
@@ -146,7 +146,7 @@ export default class BottomPlayer extends Component {
             <g class="svg_color" fill="#000" transform="translate(-655 -2658) translate(87 2624)"><g transform="translate(520 29) rotate(-180 32.714 12.5)"><path d="M5.187 2.955L12.588 12.834 -2.215 12.834z" transform="rotate(90 5.187 7.895)"></path><rect width="1.482" height="14.803" x="9.632" y=".74" rx=".741"></rect></g></g>
             </svg>
           </button>
-          <button title="Play" className="play false" onClick={this.playSong} >
+          <button title="Play" className="play false"  >
             <svg width="13" height="14" viewBox="0 0 16 24">
             <path class="svg_color" fill-rule="evenodd" d="M0 0v24l20-12z"></path>
             </svg>
@@ -190,7 +190,7 @@ export default class BottomPlayer extends Component {
           </button>
         </div>
 
-        <audio ref={this.audioRef} src={songs.src} controls />
+        {/* <audio ref={this.audioRef} src={songs.src} controls /> */}
 
         </section>
       </div>
